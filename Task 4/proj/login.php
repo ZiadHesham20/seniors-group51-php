@@ -11,7 +11,6 @@ $users = [
 	'user1' => ['username' => $username , 'email' => $email , 'password' =>$password],
   ];
 
-setcookie("username", $username);
 $allerrors = [];
 //
 if (! empty($username)) {
@@ -64,9 +63,12 @@ if (! empty($email)) {
     $allerrors['passwordFill'] = "you didnt write any thing ";
  }
 
-// foreach ($users as $user) {
-    
-// }
+//  foreach ($users as $user) {
+//    if($user['username'] == $username && $user['password'] == $password){
+// 	$flag = 1;
+// 	break;
+//    } 
+//  }
 
 if ($flag == 3) {
     if ($username == 'admin1' && $email == 'admin@gmail.com') {
@@ -75,7 +77,7 @@ if ($flag == 3) {
 	else{
 		
 
-		header('location: index.php');
+		header("location: index.php?name=$username");
 	}
 }
 else{

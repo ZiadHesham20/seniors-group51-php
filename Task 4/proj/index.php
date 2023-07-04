@@ -3,7 +3,6 @@
 
 
 
-
 ?>
 
 <style>
@@ -89,7 +88,7 @@
 <main>
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
     <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <h1 class="display-3 fw-bold">Designed for <?= $_COOKIE['username'] ?></h1>
+      <h1 class="display-3 fw-bold">Designed for <?= $_GET['name'] ?></h1>
       <h3 class="fw-normal text-muted mb-3">Build anything you want with Aperture</h3>
       <div class="d-flex gap-3 justify-content-center lead fw-normal">
         <a class="icon-link" href="#">
