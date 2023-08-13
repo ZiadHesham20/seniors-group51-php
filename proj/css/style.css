@@ -1,0 +1,210 @@
+:root{
+    --mycolor: #E84545;
+    --colorchange: #e35c5c;
+}
+.home{
+    background-image: url(../img/hero-bg.jpg);
+    background-position: 100% 100%;
+    background-color: #EEEEEE;
+    background-repeat: no-repeat;
+}
+.gearbutton{
+    background-color: var(--mycolor);
+}
+.loadingScreen{
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #EEEEEE;
+    z-index: 99999999;
+}
+.selected3{
+    color: white;
+}
+.fa-gear{
+    cursor: pointer;
+}
+.colorbox{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    background-color: gray;
+    z-index: 999999;
+}
+.colors span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.correcticon{
+    color: var(--mycolor);
+}
+.font{
+    font-family: 'Inter', sans-serif;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+nav{
+    background-color: white;
+    transition: 1s all;
+}
+.tasty{
+    transition: 1s all;
+}
+.tastycolor{
+    color: var(--mycolor);
+}
+.bookingbutton{
+    background-color: var(--mycolor);
+    transition: 0.5s all;
+}
+.bookingbutton:hover{
+    background-color: var(--colorchange);
+}
+.navbuttonborder:hover{
+    border-bottom: 2px solid #e35c5c;
+}
+.title{
+    position: relative;
+}
+.happy{
+    background-color: var(--mycolor);
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    height: 3px;
+    width: 30px;
+}
+.costumebg{
+    background-color: #EEEEEE;
+}
+.costumebg2{
+    background-color: var(--mycolor);
+}
+.itemgetbig{
+    transition: 0.8s all;
+}
+.itemgetbig:hover{
+    transform: scale(1.2,1.2);
+}
+.p2button{
+    background-color: var(--colorchange);
+    transition: 0.8s all;
+}
+.p2button:hover{
+    color: white !important;
+}
+.costumefontcolor{
+    transition: 0.1s all;
+}
+.costumefontcolor:hover{
+    color: var(--mycolor) !important;
+    border-bottom: 2px solid var(--mycolor) !important;
+}
+.quotecolor{
+    color: var(--mycolor);
+}
+.startborder{
+    border-left:solid 2px var(--mycolor);
+}
+.carsolbutton{
+    width: 10px !important;
+    height: 10px !important;
+}
+.tryn{
+    position: relative;
+}
+.maincolor{
+    color: var(--mycolor);
+}
+.tryn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 156px;
+    height: 100%;
+    width: 100%;
+    background: url(../img/team-shape.svg) no-repeat center bottom;
+}
+.tryn2{
+    position: absolute;
+    top: 50px;
+    right: -100%;
+    z-index: 99;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.8s all;
+}
+.tryn:hover .tryn2{
+    opacity: 1;
+    right: 10px;
+}
+.tryn3{
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s all;
+}
+.tryn3:hover{
+    color: rgba(0, 0, 0, 1);
+}
+.carsolbutton2{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #EEEEEE !important;
+}
+.font2{
+    color: grey;
+    transition: 0.3s all;
+}
+
+.copyrightborder{
+    border-top: solid 1px grey;
+}
+.final{
+    background-color: var(--mycolor);
+    display: none; 
+}
+.phide{
+    display: none;
+}
+.pointer{
+    cursor: pointer;
+}
+iframe{
+    height : 310px; 
+}
+.svgcolorchange{
+    fill: var(--mycolor);
+   
+}
+.socialiconface{
+    border: 2px solid gray;
+    color: gray;
+}
+.socialiconinsta{
+    border: 2px solid gray;
+    color: gray;
+}
+.socialicontweet{
+    border: 2px solid gray;
+    color: gray;
+}
+.socialiconlinked{
+    border: 2px solid gray;
+    color: gray;
+}
+
+@media  (max-width: 770px) and (min-width:0) {
+    .svgcolorchange{
+        height: 40vh;
+       
+    }
+    iframe{
+        height : auto; 
+    }
+}
