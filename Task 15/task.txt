@@ -1,0 +1,1 @@
+make update chaining methods and delete like what we do in insert and select
